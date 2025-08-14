@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You Lost</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+        h1 {
+            color: #ff4d4d;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: appear 3s ease-in forwards;
+            animation-delay: 2s;
+        }
+        .heart {
+            font-size: 3em;
+            color: #ff0000;
+            animation: break 2s infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes appear {
+            to { opacity: 1; }
+        }
+        @keyframes break {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); color: #800000; }
+            100% { transform: scale(1); }
+        }
+        .farewell {
+            font-style: italic;
+            color: #999;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">💔</div>
+        <h1>The Heart You Broke</h1>
+        <h2>YOU WERE THE REASON TO QUIT AND YOU ARE THE REASON TO START IT AGAIN (REMEMBER IT)</h2>
+        <p>I remember the nights we spent laughing until dawn, the way your eyes lit up when I held you close. Those moments were real, weren't they? But now, they're just echoes in the silence you left behind.</p>
+        <p>You broke my heart into pieces when you walked away, shattering the trust and love I poured into us. You chose to leave, thinking the grass was greener elsewhere. Maybe it is, for a while. But I've realized my worth—the love I gave freely, the support I offered without question, the future we could have built together.</p>
+        <p>As I rise from this pain, stronger and wiser, picking up the fragments of my broken heart, I wonder if you'll ever look back and see what you truly lost. A man who would have moved mountains for you, who saw your flaws and loved you more for them.</p>
+        <p>This isn't revenge; it's goodbye. I'll thrive without you, rebuilding from the pieces you left behind, but deep down, I hope you find peace... even if it means regretting letting me go.</p>
+        <p class="farewell">Forever in my memories, but no longer in my heart.</p>
+    </div>
+</body>
+</html>
